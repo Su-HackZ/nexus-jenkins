@@ -24,7 +24,7 @@ pipeline{
                     nexusUrl: '172.31.15.19:8081', 
                     nexusVersion: 'nexus3', 
                     protocol: 'http', 
-                    repository: 'http://3.142.43.121:8081/repository/Jenkins/', 
+                    repository: 'http://3.142.43.121:8081/repository/Jenkins', 
                     version: '1.0.0'
             }
         }
