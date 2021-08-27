@@ -1,1 +1,1 @@
-# For the intigration of Nexus and Jenkins
+# intigration of Nexus and Jenkins
