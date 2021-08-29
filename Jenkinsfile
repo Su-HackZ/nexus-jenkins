@@ -2,12 +2,19 @@ pipeline{
     agent any
     
     stages{
-        stage('Build'){
+        
+        stage("Git Checkout"){
             steps{
-                sh script: 'mvn clean package'
+                git credentialsId: 'github', url: 'https://github.com/superuser6/nexus-jenkins'
             }
         }
-        stage('Upload war to Nexus'){
+        
+        stage("Maven Build"){
+            steps{
+                sh "mvn clean package"
+            }
+        }
+        stage("Upload war to Nexus"){
             steps{
                 nexusArtifactUploader artifacts: [
                     [
