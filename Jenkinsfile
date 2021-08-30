@@ -18,9 +18,9 @@ pipeline{
             steps{
                 nexusArtifactUploader artifacts: [
                     [
-                        artifactId: 'nexus pipeline',
+                        artifactId: 'nexus-pipeline',
                         classifier: '', 
-                        file: 'target/nexus pipeline-1.0.0.war', 
+                        file: 'target/nexu-pipeline-1.0.0.war', 
                         type: 'war'
                         ]
                     ], 
