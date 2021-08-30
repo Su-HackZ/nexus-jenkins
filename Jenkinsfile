@@ -3,11 +3,11 @@ pipeline{
     
     stages{
         
-        // stage("Git Checkout"){
-        //     steps{
-        //         git credentialsId: 'github', url: 'https://github.com/superuser6/nexus-jenkins'
-        //     }
-        // }
+        stage("Git Checkout"){
+            steps{
+                git branch: 'main', url: 'https://github.com/superuser6/nexus-jenkins'
+            }
+        }
         
         stage("Maven Build"){
             steps{
