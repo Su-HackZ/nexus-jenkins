@@ -20,7 +20,7 @@ pipeline{
                     [
                         artifactId: 'nexus-pipeline',
                         classifier: '', 
-                        file: 'target/nexu-pipeline-2.0.0.war', 
+                        file: 'target/nexu-pipeline-1.0.0.war', 
                         type: 'war'
                         ]
                     ], 
@@ -30,7 +30,7 @@ pipeline{
                     nexusVersion: 'nexus3', 
                     protocol: 'http', 
                     repository: 'Jenkins', 
-                    version: '2.0.0'
+                    version: '1.0.0'
             }
         }
     }
