@@ -3,11 +3,11 @@ pipeline{
     
     stages{
         
-        // stage("Git Checkout"){
-        //     steps{
-        //         git branch: 'main', url: 'https://github.com/superuser6/nexus-jenkins'
-        //     }
-        // }
+        stage("Git Checkout"){
+            steps{
+                git branch: 'main', url: 'https://github.com/superuser6/nexus-jenkins'
+            }
+        }
         
         stage("Maven Build"){
             steps{
@@ -25,7 +25,7 @@ pipeline{
                         ]
                     ], 
                     credentialsId: '64a6c3a5-7874-4ce5-aca1-36aad8abaf5e', 
-                    groupId: 'in.javahome', 
+                    groupId: 'nexus', 
                     nexusUrl: '172.31.15.19:8081', 
                     nexusVersion: 'nexus3', 
                     protocol: 'http', 
