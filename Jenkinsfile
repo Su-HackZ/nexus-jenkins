@@ -1,3 +1,4 @@
+currentBuild.displayName = "Nexus-Upload"
 pipeline{
     agent any
     
